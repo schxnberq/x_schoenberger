@@ -1,5 +1,4 @@
 <div class="content__categ content__photo <?php echo (!isset($page[2])) ? 'main-cnt' : 'sub-cnt' ?> fadeItem">
-    <p>123</p>
     <?php
     $sql = "SELECT album FROM work WHERE category = 'photography' AND status = 'live' AND deleted = 0";
     $res = mysqli_query($dblink, $sql);

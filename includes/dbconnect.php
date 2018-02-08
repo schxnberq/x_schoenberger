@@ -1,7 +1,7 @@
 <?php
 /*$dblink = mysqli_connect("hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "vjd9z83aeiqoxnk0", "inwnxa3w4t9vnwp0", "svgpzj9gojkbakj7");*/
 
-$url = getenv('mysql://th6e1pgmqak5lbbo:mr3cz7pw0aczz21w@gzp0u91edhmxszwf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s05aoadkktjhmriz');
+$url = getenv('mysql://zv0pgds7cy5qqdr8:euqgdga67wzw3bx9@mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/kakt2ommoaogpj8t');
 $dbparts = parse_url($url);
 
 $hostname = $dbparts['host'];
@@ -10,10 +10,10 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
 // Create connection
-//$dblink = mysqli_connect("localhost", "root", "root", "portfolio");
+$dblink = mysqli_connect($hostname, $username, $password, $database);
 
 // Check connection
-/*if (!$dblink) {
+if (!$dblink) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connection was successfully established!";*/
+echo "Connection was successfully established!";
