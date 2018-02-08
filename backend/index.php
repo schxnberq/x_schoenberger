@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define("APP_ROOT", "http://schxnberq.herokuapp.com/");
+define("APP_ROOT", "http://x-schoenberger.herokuapp.com/");
 
 
 if (isset($_SESSION['login']) && $_SESSION['login'] !== 1 || !isset($_SESSION['login'])) {
