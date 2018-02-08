@@ -1,7 +1,7 @@
 <?php
 /*$dblink = mysqli_connect("hngomrlb3vfq3jcr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com", "vjd9z83aeiqoxnk0", "inwnxa3w4t9vnwp0", "svgpzj9gojkbakj7");*/
 
-$url = getenv('mysql://zv0pgds7cy5qqdr8:euqgdga67wzw3bx9@mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/kakt2ommoaogpj8t');
+$url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
 $hostname = $dbparts['host'];
