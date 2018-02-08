@@ -3,12 +3,11 @@
     <div class="hero__cnt">
 
         <div class="hero__cnt__title">
-            <h2>Hi, <span class="iam">I'm <a href="<?php echo APP_ROOT ?>cv"><em
-                                class="iam-name">Niklas Schoenberger.</em></span></a>
+            <h2>Hi, <span class="iam">I'm <a href="<?php echo APP_ROOT ?>cv"><em class="iam-name">Niklas Schoenberger.</em></span></a>
             </h2>
             <p class="skills"><em class="skillsA">A</em> <a data-goto href="<?php echo APP_ROOT ?>work/web" class="">Webdeveloper,</a>
                 <!--<br class="hideBR">-->
-                <a data-goto href="<?php echo APP_ROOT ?>work/photography" class="">Photographer,</a>
+                <a data-goto href="<?php echo APP_ROOT ?>work/photography" class="">Photo,</a>
                 <!--<br class="hideBR">-->
                 <a target="_blank" href="https://behance.net/x_schoenberger" class="">occasional Designer,</a>
                 <!--<br class="hideBR">-->
