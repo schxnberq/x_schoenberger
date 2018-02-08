@@ -7,7 +7,7 @@
             </h2>
             <p class="skills"><em class="skillsA">A</em> <a data-goto href="<?php echo APP_ROOT ?>work/web" class="">Webdeveloper,</a>
                 <!--<br class="hideBR">-->
-                <a data-goto href="<?php echo APP_ROOT ?>work/photography" class="">Photo,</a>
+                <a data-goto href="<?php echo APP_ROOT ?>work/photography" class="">Photography,</a>
                 <!--<br class="hideBR">-->
                 <a target="_blank" href="https://behance.net/x_schoenberger" class="">occasional Designer,</a>
                 <!--<br class="hideBR">-->
