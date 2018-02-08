@@ -10,7 +10,7 @@ $password = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
 // Create connection
-$dblink = mysqli_connect($hostname, $username, $password, $database);
+$dblink = mysqli_connect("localhost", "root", "root", "portfolio");
 
 // Check connection
 if (!$dblink) {
