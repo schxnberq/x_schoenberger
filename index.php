@@ -2,7 +2,7 @@
 
 session_start();
 
-define("APP_ROOT", "http://x-schoenberger.herokuapp.com/");
+define("APP_ROOT", "https://x-schoenberger.herokuapp.com/");
 
 include 'includes/dbconnect.php';
 include 'includes/functions.php';
