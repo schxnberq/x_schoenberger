@@ -4,10 +4,6 @@
     $res = mysqli_query($dblink, $sql);
     $row = mysqli_fetch_all($res, MYSQLI_ASSOC);
 
-    echo "<pre>";
-    var_dump($dbparts);
-    echo "</pre>";
-
     $keys = array();
     $albums = array();
     foreach ($row as $key => $item) {

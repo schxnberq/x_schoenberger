@@ -13,7 +13,7 @@ $database = ltrim($dbparts['path'],'/');
 $dblink = mysqli_connect($hostname, $username, $password, $database);
 
 // Check connection
-if (!$dblink) {
+/*if (!$dblink) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connection was successfully established!";
+echo "Connection was successfully established!";*/
