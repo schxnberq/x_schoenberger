@@ -2,7 +2,7 @@
 
 session_start();
 
-define("APP_ROOT", "http://localhost:8888/portfolio/");
+define("APP_ROOT", "http://www.x_schoenberger.com/");
 
 include 'includes/dbconnect.php';
 include 'includes/functions.php';

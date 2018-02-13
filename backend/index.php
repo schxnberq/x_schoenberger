@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-define("APP_ROOT", "http://localhost:8888/portfolio/");
+define("APP_ROOT", "http://www.x_schoenberger.com/");
 
 
 if (isset($_SESSION['login']) && $_SESSION['login'] !== 1 || !isset($_SESSION['login'])) {
