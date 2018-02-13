@@ -4,5 +4,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
 
-RewriteRule ^(.*)$ x_schoenberger/index.php?page=$1
-RewriteRule ^(.*)/^(.*)$ x_schoenberger/index.php?page=$1&categ=$2
+RewriteRule ^(.*)$ xschoenberger/index.php?page=$1
+RewriteRule ^(.*)/^(.*)$ xschoenberger/index.php?page=$1&categ=$2

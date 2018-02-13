@@ -2,7 +2,7 @@
 
 session_start();
 
-define("APP_ROOT", "http://www.x_schoenberger.com/");
+define("APP_ROOT", "http://www.xschoenberger.com/");
 
 include 'includes/dbconnect.php';
 include 'includes/functions.php';
