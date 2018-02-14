@@ -1,5 +1,5 @@
 <?php
-$dblink = mysqli_connect("localhost", "root", "root", "portfolio", "8889");
+$dblink = mysqli_connect("localhost", "xschoenberger", "Supercalifragilistic17!", "xschoenberger_db");
 
 /*$dblink = mysqli_connect("e49145-ftp.services.easyname.eu", "u58111db4", "supercalifragilistic", "u58111db4");*/
 
