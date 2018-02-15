@@ -25,24 +25,24 @@ $page = explode("/", $page);
 var_dump($page);
 
 
-if ($page[1] == "work" && !isset($page[2])) {
+if ($page[0] == "work" && !isset($page[1])) {
     header("Location:" . APP_ROOT . 'work/photography');
     exit();
 }
-if ($_SESSION['login'] == 1 && $page[1] == "login") {
+if ($_SESSION['login'] == 1 && $page[0] == "login") {
     header("Location:" . APP_ROOT . "backend/dashboard");
     exit();
 }
-if ($page[1] == "backend") {
+if ($page[0] == "backend") {
     if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
         header("Location:" . APP_ROOT . "backend/dashboard");
         exit();
     }
 }
 
-$content .= "$page[1].php";
+$content .= "$page[0].php";
 
-if (isset($page[1]) && !file_exists("content/$page[1].php")) {
+if (isset($page[0]) && !file_exists("content/$page[0].php")) {
     $content = "content/error.php";
 }
 
