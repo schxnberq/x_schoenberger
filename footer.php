@@ -3,8 +3,7 @@
     <span>© 2017 | Niklas Schoenberger</span>
 </footer>
 
-<?php
-if ($page[0] === "home" || !isset($page)) { ?>
+<?php if ($page[0] === "home" || !isset($page[0])) { ?>
     <script src="<?php echo APP_ROOT ?>assets/js/Tweenmax.min.js"></script>
     <script src="<?php echo APP_ROOT ?>assets/js/main.js"></script>
     <script src="<?php echo APP_ROOT ?>assets/js/home.js"></script>
