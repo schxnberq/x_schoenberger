@@ -22,7 +22,6 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 $page = rtrim($page, "/");
 $page = explode("/", $page);
 
-var_dump($page);
 
 
 if ($page[0] == "work" && !isset($page[1])) {
