@@ -10,8 +10,7 @@
           content="Niklas Schoenberger - Digital Artist, Photography, Webdesign & Webdevelopment, Photomanipulation, Music">
     <link rel="stylesheet" href="<?php echo APP_ROOT ?>assets/css/main.css">
     <link rel="icon" href="<?php echo APP_ROOT ?>assets/imgs/logo-smoke.png">
-    <!--<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet'/>-->
+    
 </head>
 <body id="body">
 
