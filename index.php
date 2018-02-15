@@ -22,6 +22,8 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 $page = rtrim($page, "/");
 $page = explode("/", $page);
 
+var_dump($page);
+
 
 if ($page[0] == "work" && !isset($page[1])) {
     header("Location:" . APP_ROOT . 'work/photography');
