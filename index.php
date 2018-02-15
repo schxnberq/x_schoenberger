@@ -41,9 +41,9 @@ if ($page[0] == "backend") {
 
 $content .= "$page[0].php";
 
-if (isset($page[0]) && !file_exists("content/$page[0].php")) {
+/* if (isset($page[0]) && !file_exists("content/$page[0].php")) {
     $content = "content/error.php";
-}
+} */
 
 
 include "header.php";
