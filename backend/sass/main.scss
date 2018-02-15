@@ -241,7 +241,6 @@ header {
 
 main.backend {
   width: 80%;
-  display: inline-block;
   float: right;
   min-height: 100vh;
   background-color: $pastel_dark_1;
@@ -363,7 +362,6 @@ main.backend {
               margin-bottom: 0;
               padding-bottom: .5em;
               width: 100%;
-              display: inline-block;
               float: left;
 
               & .form__group__cnt {
@@ -558,38 +556,7 @@ main.backend {
                   transform: scaleY(1);
                 }
 
-                & li.set {
-
-                }
-
               }
-
-              /*& input {
-                position: absolute;
-                visibility: hidden;
-                opacity: 0;
-
-                &::placeholder {
-                  opacity: 0;
-                }
-
-
-
-                &:focus {
-                  outline: none;
-                  border-bottom: 2px solid rgba($acc_bright, .75);
-                }
-                &:focus ~ .focus-line:before {
-                  transform: scaleY(1);
-                }
-
-                &:not(:placeholder-shown) {
-                  border-bottom: 2px solid rgba($acc_bright, .75);
-                }
-                &:not(:placeholder-shown) ~ .focus-line:before {
-                  transform: scaleY(1);
-                }
-              }*/
             }
             &.album {
               margin-bottom: 1.5em;
