@@ -17,9 +17,9 @@
     </div>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__list__item <?php echo ($page == 'dashboard') ? 'active' : '' ?>"><a href="<?php echo APP_ROOT ?>backend/dashboard">Upload</a></li>
-            <li class="nav__list__item <?php echo ($page == 'catalog') ? 'active' : '' ?>"><a href="<?php echo APP_ROOT ?>backend/catalog">Catalog</a></li>
-            <li class="nav__list__item"><a href="<?php echo APP_ROOT ?>backend/logout">Logout</a></li>
+            <li class="nav__list__item <?php echo ($page == 'dashboard') ? 'active' : '' ?>"><a href="<?php echo APP_ROOT ?>backend/?page=dashboard">Upload</a></li>
+            <li class="nav__list__item <?php echo ($page == 'catalog') ? 'active' : '' ?>"><a href="<?php echo APP_ROOT ?>backend/?page=catalog">Catalog</a></li>
+            <li class="nav__list__item"><a href="<?php echo APP_ROOT ?>backend/?page=logout">Logout</a></li>
         </ul>
     </nav>
 </header>
