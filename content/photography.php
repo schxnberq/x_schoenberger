@@ -1,4 +1,4 @@
-<div class="content__categ content__photo <?php echo (!isset($page[2])) ? 'main-cnt' : 'sub-cnt' ?> fadeItem">
+<div class="content__categ content__photo <?php echo (!isset($page_ter)) ? 'main-cnt' : 'sub-cnt' ?> fadeItem">
     <?php
     $sql = "SELECT album FROM work WHERE category = 'photography' AND status = 'live' AND deleted = 0";
     $res = mysqli_query($dblink, $sql);
@@ -29,7 +29,7 @@
 
         $albums[$fin_href] = "1";
 
-        if (!isset($page[2]) && $page[0] == "work") {
+        if (!isset($page_ter) && $page_pri == "work") {
             ?>
             <div class="content__photo__cnt">
                 <h2 class="key-title"><?php echo $keyword; ?></h2>
@@ -40,13 +40,13 @@
                         <img src="<?php echo APP_ROOT . $item['path'] ?>" alt="">
                     <?php } endforeach; ?>
             </div>
-        <?php } elseif (isset($page[1]) && array_key_exists($page[2], $albums)) {
+        <?php } elseif (isset($page_sec) && array_key_exists($page_ter, $albums)) {
             $categories = array();
             $rows = array();
             $count = 0;
             foreach ($key_row as $key => $img) {
                 $count++;
-                if ($page[2] == str_replace(" ", "_", strtolower(str_replace(".", "-", $img['album'])))) {
+                if ($page_ter == str_replace(" ", "_", strtolower(str_replace(".", "-", $img['album'])))) {
                     $categories[$img['keywords']] = $count;
                     array_push($rows, $img);
                 }

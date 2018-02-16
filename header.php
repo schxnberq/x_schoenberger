@@ -25,7 +25,7 @@
         <div class="nav__icon fadeNav">
             <div class="nav__icon__breadcr">
                 <h2 tabindex="2"><span
-                            class="pseudo-active"><?php echo (!isset($_GET['page'])) ? "home" : $page[0]; ?></span></h2>
+                            class="pseudo-active"><?php echo (!isset($_GET['page'])) ? "home" : $page_pri; ?></span></h2>
             </div>
             <div class="nav__icon__cnt" tabindex="3">
                 <svg id="deck_menu" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.92 160.32">
@@ -99,6 +99,6 @@
     }, 100)
 </script>
 <body>
-<main class="main <?php echo (!isset($page[0]) || $page[0] == "home") ? 'home' : '' ?>">
+<main class="main <?php echo (!isset($page_pri) || $page_pri == "home") ? 'home' : '' ?>">
 
 
