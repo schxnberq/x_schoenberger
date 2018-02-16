@@ -18,10 +18,12 @@ if (!isset($_SESSION['login'])) {
 }
 
 $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
+var_dump($page);
 
 $page = rtrim($page, "/");
-$page = explode("/", $page);
+var_dump($page);
 
+$page = explode("/", $page);
 var_dump($page);
 
 if ($page[0] == "work" && !isset($page[1])) {
