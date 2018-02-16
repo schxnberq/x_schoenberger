@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function updateCatalog(item_id, category, status, album, keywords) {
 
-            jQuery.post("backend/?page=update_catalog", {
+            jQuery.post("?page=update_catalog", {
                 update_catalog: 'isset',
                 item_id: item_id,
                 category: category,
