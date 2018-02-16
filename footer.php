@@ -3,7 +3,7 @@
     <span>© 2017 | Niklas Schoenberger</span>
 </footer>
 
-<?php if ($page_pri === "home" || !isset($page_pri)) { ?>
+<?php if ($page_pri === "home" || !isset($page)) { ?>
     <script src="<?php echo APP_ROOT ?>assets/js/TweenMax.min.js"></script>
     <script src="<?php echo APP_ROOT ?>assets/js/main.js"></script>
     <script src="<?php echo APP_ROOT ?>assets/js/home.js"></script>
