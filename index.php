@@ -19,13 +19,17 @@ if (!isset($_SESSION['login'])) {
 
 $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 
-var_dump(count($page));
 
 $page = rtrim($page, "/");
 
 $page = explode("/", $page);
 
-$page_pri = $page[1];
+$page_pri = null;
+if(count($page) <= 1) {
+    $page_pri = "home";
+} else {
+    $page_pri = $page[1];
+}
 $page_sec = $page[2];
 $page_ter = $page[3];
 
