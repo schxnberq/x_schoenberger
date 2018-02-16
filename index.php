@@ -19,6 +19,8 @@ if (!isset($_SESSION['login'])) {
 
 $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 
+var_dump(count($page));
+
 $page = rtrim($page, "/");
 
 $page = explode("/", $page);
