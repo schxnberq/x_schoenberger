@@ -15,7 +15,7 @@ include '../includes/dbconnect.php';
 include "../includes/functions.php";
 
 
-$page = (!isset($_GET['page'])) ? "dashboard" : $_GET['page'];
+$page = (!isset($_GET['page'])) ? null : $_GET['page'];
 
 
 $content = "content/";
