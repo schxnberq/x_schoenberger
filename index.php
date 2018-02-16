@@ -42,8 +42,12 @@ if ($page_pri == "backend") {
         exit();
     }
 }
+if(!isset($page)) {
+    $content .= "home.php";
+} else {
+    $content .= "$page_pri.php";
+}
 
-$content .= "$page_pri.php";
 
 if (isset($page_pri) && !file_exists("content/$page_pri.php")) {
     $content = "content/error.php";
