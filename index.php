@@ -18,7 +18,6 @@ if (!isset($_SESSION['login'])) {
 }
 
 $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
-var_dump($page);
 
 $page = rtrim($page, "/");
 
@@ -42,11 +41,9 @@ if ($page_pri == "backend") {
         exit();
     }
 }
-if(!isset($page)) {
-    $content .= "home.php";
-} else {
-    $content .= "$page_pri.php";
-}
+
+$content .= "$page_pri.php";
+
 
 
 if (isset($page_pri) && !file_exists("content/$page_pri.php")) {
