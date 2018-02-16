@@ -141,7 +141,12 @@ body {
 ::-webkit-scrollbar {
   display: none; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0; }
 
 .photoBR {
@@ -240,7 +245,8 @@ h1, h2, h3, h4, h5, h6 {
     .header .nav__icon__cnt:focus {
       border: 2px solid rgba(24, 225, 227, 0.25);
       outline: none; }
-      .header .nav__icon__cnt:focus svg polygon, .header .nav__icon__cnt:focus svg polyline {
+      .header .nav__icon__cnt:focus svg polygon,
+      .header .nav__icon__cnt:focus svg polyline {
         stroke: #18e1e3; }
     .header .nav__icon__cnt svg {
       position: absolute;
@@ -255,7 +261,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
       -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
-      .header .nav__icon__cnt svg polygon, .header .nav__icon__cnt svg polyline {
+      .header .nav__icon__cnt svg polygon,
+      .header .nav__icon__cnt svg polyline {
         stroke: #f8f4f1;
         stroke-width: 7;
         margin: 5px;
@@ -388,7 +395,8 @@ h1, h2, h3, h4, h5, h6 {
       left: 1px;
       background-color: #D6CFCB;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #706677 50%, rgba(0, 0, 0, 0) 100%); }
-    .header .nav__menu__list__item a, .header .nav__menu__list__item .work-link {
+    .header .nav__menu__list__item a,
+    .header .nav__menu__list__item .work-link {
       display: block;
       text-decoration: none;
       color: inherit;
@@ -398,26 +406,30 @@ h1, h2, h3, h4, h5, h6 {
       line-height: calc((100vh - 70px - 8vh) * 0.75);
       font-size: 1.8em;
       letter-spacing: 2px; }
-    .header .nav__menu__list__item a span, .header .nav__menu__list__item .work-link span {
+    .header .nav__menu__list__item a span,
+    .header .nav__menu__list__item .work-link span {
       position: relative;
       /*&:after {
-        content: '';
-        display: block;
-        position: absolute;
-        background-color: $pastel_blue;
-        width: 0%;
-        height: 2px;
-        bottom: 50%;
-        right: 38.5%;
-        transform: translateY(75%);
-        @include transition(all, .35s, cubic-bezier(0.25, 0.46, 0.45, 0.94));
-        z-index: -1;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-      }
-      &:hover:after {
-        width: 12%;
-      }*/ }
-    .header .nav__menu__list__item a span:before, .header .nav__menu__list__item a .main .content .overlay span.exit:after, .main .content .overlay .header .nav__menu__list__item a span.exit:after, .header .nav__menu__list__item .work-link span:before, .header .nav__menu__list__item .work-link .main .content .overlay span.exit:after, .main .content .overlay .header .nav__menu__list__item .work-link span.exit:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: $pastel_blue;
+  width: 0%;
+  height: 2px;
+  bottom: 50%;
+  right: 38.5%;
+  transform: translateY(75%);
+  @include transition(all, .35s, cubic-bezier(0.25, 0.46, 0.45, 0.94));
+  z-index: -1;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+&:hover:after {
+  width: 12%;
+}*/ }
+    .header .nav__menu__list__item a span:before, .header .nav__menu__list__item a .main .content .overlay span.exit:after, .main .content .overlay .header .nav__menu__list__item a span.exit:after,
+    .header .nav__menu__list__item .work-link span:before,
+    .header .nav__menu__list__item .work-link .main .content .overlay span.exit:after,
+    .main .content .overlay .header .nav__menu__list__item .work-link span.exit:after {
       content: '';
       display: block;
       position: absolute;
@@ -435,7 +447,12 @@ h1, h2, h3, h4, h5, h6 {
       transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
       z-index: -1;
       opacity: 0.6; }
-    .header .nav__menu__list__item a .pseudo-active:before, .header .nav__menu__list__item a .main .content__head__title .cnt-breadcr a.pseudo-active:after, .main .content__head__title .cnt-breadcr .header .nav__menu__list__item a a.pseudo-active:after, .header .nav__menu__list__item a .main .content .overlay .pseudo-active.exit:after, .main .content .overlay .header .nav__menu__list__item a .pseudo-active.exit:after, .header .nav__menu__list__item .work-link .pseudo-active:before, .header .nav__menu__list__item .work-link .main .content__head__title .cnt-breadcr a.pseudo-active:after, .main .content__head__title .cnt-breadcr .header .nav__menu__list__item .work-link a.pseudo-active:after, .header .nav__menu__list__item .work-link .main .content .overlay .pseudo-active.exit:after, .main .content .overlay .header .nav__menu__list__item .work-link .pseudo-active.exit:after {
+    .header .nav__menu__list__item a .pseudo-active:before, .header .nav__menu__list__item a .main .content__head__title .cnt-breadcr a.pseudo-active:after, .main .content__head__title .cnt-breadcr .header .nav__menu__list__item a a.pseudo-active:after, .header .nav__menu__list__item a .main .content .overlay .pseudo-active.exit:after, .main .content .overlay .header .nav__menu__list__item a .pseudo-active.exit:after,
+    .header .nav__menu__list__item .work-link .pseudo-active:before,
+    .header .nav__menu__list__item .work-link .main .content__head__title .cnt-breadcr a.pseudo-active:after,
+    .main .content__head__title .cnt-breadcr .header .nav__menu__list__item .work-link a.pseudo-active:after,
+    .header .nav__menu__list__item .work-link .main .content .overlay .pseudo-active.exit:after,
+    .main .content .overlay .header .nav__menu__list__item .work-link .pseudo-active.exit:after {
       opacity: .4;
       transform: scaleX(1); }
     .header .nav__menu__list__item a:hover span:before, .header .nav__menu__list__item a:hover .main .content .overlay span.exit:after, .main .content .overlay .header .nav__menu__list__item a:hover span.exit:after {
@@ -527,14 +544,15 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden; }
 
 @media screen and (max-width: 768px) {
-  .header .nav__menu__list__item a, .header .nav__menu__list__item .work-link {
+  .header .nav__menu__list__item a,
+  .header .nav__menu__list__item .work-link {
     display: block;
     text-decoration: none;
     color: inherit;
     position: relative;
-    /*height: 75%;
-    margin-top: 20%;
-    line-height: calc((100vh - 70px - 8vh) * 0.75);*/
+      /*height: 75%;
+margin-top: 20%;
+line-height: calc((100vh - 70px - 8vh) * 0.75);*/
     z-index: 2;
     padding: 1.3em 0;
     line-height: 1.3em;
@@ -681,13 +699,13 @@ h1, h2, h3, h4, h5, h6 {
     perspective: 1000px;
     z-index: 0;
     /*@-webkit-keyframes hoverme {
-      0% {
-        opacity: 1;}
-      50% {
-        opacity: 0.5;}
-      100% {
-        opacity: 1;}
-    }*/ }
+  0% {
+    opacity: 1;}
+  50% {
+    opacity: 0.5;}
+  100% {
+    opacity: 1;}
+}*/ }
     .main .hero__cnt__img img {
       width: 65%;
       display: block;
@@ -851,15 +869,15 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         z-index: 3;
         /*&:after {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 15%;
-          height: 1px;
-          background-color: $acc_bright;
-          left: 50%;
-          transform: translateX(-50%);
-        }*/ }
+  content: '';
+  display: block;
+  position: absolute;
+  width: 15%;
+  height: 1px;
+  background-color: $acc_bright;
+  left: 50%;
+  transform: translateX(-50%);
+}*/ }
         .main .content__head__title h2 span em {
           font-style: normal;
           font-size: 1rem;
@@ -1223,7 +1241,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     z-index: 102;
     transition: opacity .35s ease-out; }
-  .main .content .overlay__prev, .main .content .overlay__next {
+  .main .content .overlay__prev,
+  .main .content .overlay__next {
     position: fixed;
     left: 0;
     top: 50%;
@@ -1233,7 +1252,8 @@ h1, h2, h3, h4, h5, h6 {
     animation: btns 2s ease-out 0s;
     opacity: 0;
     cursor: pointer; }
-  .main .content .overlay__prev span, .main .content .overlay__next span {
+  .main .content .overlay__prev span,
+  .main .content .overlay__next span {
     display: block;
     position: absolute;
     width: 50%;
@@ -1326,25 +1346,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10em; }
 
 @-webkit-keyframes shadow3d {
-  5%, 25% {
+  5%,
+    25% {
     text-shadow: -0.3em -0.15em 0.5px red, 0.4em -0.2em 0.5px cyan; }
-  15%, 35% {
+  15%,
+    35% {
     text-shadow: -0.5em 0em 0.5px red, -0.25em 0.3em 0.5px cyan; }
   40% {
     text-shadow: none; } }
 @keyframes shadow3d {
-  5%, 25% {
+  5%,
+    25% {
     text-shadow: -0.3em -0.15em 0.5px red, 0.4em -0.2em 0.5px cyan; }
-  15%, 35% {
+  15%,
+    35% {
     text-shadow: -0.5em 0em 0.5px red, -0.25em 0.3em 0.5px cyan; }
   40% {
     text-shadow: none; } }
 @keyframes hoverme {
   0% {
     opacity: 0.15; }
-  5%, 25% {
+  5%,
+    25% {
     opacity: 0.35; }
-  15%, 35% {
+  15%,
+    35% {
     opacity: 0; } }
 @keyframes mac {
   0% {
@@ -1370,9 +1396,18 @@ h1, h2, h3, h4, h5, h6 {
   .main .content__photo__keyword .img {
     grid-column: span 2; } }
 @keyframes btns {
-  0%, 10%, 20%, 30%, 40%, 50%, 60% {
+  0%,
+    10%,
+    20%,
+    30%,
+    40%,
+    50%,
+    60% {
     opacity: 1; }
-  70%, 80%, 90%, 100% {
+  70%,
+    80%,
+    90%,
+    100% {
     opacity: 0; } }
 footer {
   margin: 1em 0 .25em 0;
@@ -1460,10 +1495,10 @@ footer {
     font-size: 1.8em;
     font-weight: 300;
     letter-spacing: 1.3px;
-    /*position: absolute;
-    top: 40%;
-    left: 0%;
-    @include centerAbsolute(-40%, -50%);*/ }
+        /*position: absolute;
+top: 40%;
+left: 0%;
+@include centerAbsolute(-40%, -50%);*/ }
   .main .content__about {
     padding-left: 13.5%; } }
 @media screen and (max-width: 768px) {
@@ -1625,10 +1660,14 @@ footer {
     .main .content__head {
       margin-left: -2.5%;
       width: calc(100vw - 20px); }
-    .main .content__photo__keyword .img {
-      padding: 10px; }
-    .main .content__photo__keyword .title em {
-      transform: translate(-5%, 7%) rotate(90deg); }
+    .main .content__photo__keyword {
+      padding: 0 2.5%; }
+      .main .content__photo__keyword.img {
+        padding: 10px; }
+      .main .content__photo__keyword .title {
+        margin-left: -1.75rem; }
+        .main .content__photo__keyword .title em {
+          transform: translate(-5%, 7%) rotate(90deg); }
   .main .content__head__title .cnt-breadcr a {
     width: 60%; }
   .main .content__head__title h2.photo {
