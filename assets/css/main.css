@@ -1580,30 +1580,38 @@ footer {
   .main .content {
     padding-top: 25vh; } }
 @media screen and (max-width: 575px) {
-  .header .nav__logo h1 a img {
-    width: 1.75em;
-    height: 1.75em; }
-  .header .nav__icon__breadcr h2 {
-    margin-right: 1em; }
-  .header .nav__menu__exit {
-    top: 4vh;
-    width: 65px;
-    height: 65px; }
-  .header .nav__menu__list__item {
-    height: auto;
-    font-size: .8em; }
-    .header .nav__menu__list__item:not(:first-child):before, .header .main .content__head__title .cnt-breadcr a.nav__menu__list__item:not(:first-child):after, .main .content__head__title .cnt-breadcr .header a.nav__menu__list__item:not(:first-child):after, .header .main .content .overlay .nav__menu__list__item.exit:not(:first-child):after, .main .content .overlay .header .nav__menu__list__item.exit:not(:first-child):after {
-      width: 100%;
-      height: 1px;
-      top: 0%; }
-    .header .nav__menu__list__item a {
+  body {
+    width: calc(100% - 20px); }
+
+  .html-border {
+    height: 10px; }
+
+  .header {
+    padding: 0; }
+    .header .nav__logo h1 a img {
+      width: 1.75em;
+      height: 1.75em; }
+    .header .nav__icon__breadcr h2 {
+      margin-right: 1em; }
+    .header .nav__menu__exit {
+      top: 4vh;
+      width: 65px;
+      height: 65px; }
+    .header .nav__menu__list__item {
       height: auto;
-      padding: 1.75em 0;
-      margin-top: 0; }
-      .header .nav__menu__list__item a span em {
-        top: -12vh; }
-  .header .nav__menu__social__item a {
-    padding: .85em .75em; }
+      font-size: .8em; }
+      .header .nav__menu__list__item:not(:first-child):before, .header .main .content__head__title .cnt-breadcr a.nav__menu__list__item:not(:first-child):after, .main .content__head__title .cnt-breadcr .header a.nav__menu__list__item:not(:first-child):after, .header .main .content .overlay .nav__menu__list__item.exit:not(:first-child):after, .main .content .overlay .header .nav__menu__list__item.exit:not(:first-child):after {
+        width: 100%;
+        height: 1px;
+        top: 0%; }
+      .header .nav__menu__list__item a {
+        height: auto;
+        padding: 1.75em 0;
+        margin-top: 0; }
+        .header .nav__menu__list__item a span em {
+          top: -12vh; }
+    .header .nav__menu__social__item a {
+      padding: .85em .75em; }
 
   .main .hero__cnt__title h2 {
     font-size: 1.2em; }
@@ -1612,6 +1620,15 @@ footer {
   .main .hero__cnt__title .skills {
     line-height: 1.4em;
     font-size: 1.3em; }
+  .main .content {
+    padding: 15vh 2.5%; }
+    .main .content__head {
+      margin-left: -2.5%;
+      width: calc(100vw - 20px); }
+    .main .content__photo__keyword img {
+      padding: 10px; }
+    .main .content__photo__keyword .title {
+      transform: translate(-5%, 7%) rotate(90deg); }
   .main .content__head__title .cnt-breadcr a {
     width: 60%; }
   .main .content__head__title h2.photo {
