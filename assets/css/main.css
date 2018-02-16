@@ -1670,6 +1670,9 @@ left: 0%;
           transform: translate(-5%, 7%) rotate(90deg); }
     .main .content__photo__cnt img {
       width: 90%; }
+    .main .content__photo__cnt a {
+      width: 90%;
+      left: 5%; }
   .main .content__head__title .cnt-breadcr a {
     width: 60%; }
   .main .content__head__title h2.photo {
