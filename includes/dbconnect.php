@@ -1,5 +1,5 @@
 <?php
-$dblink = mysqli_connect("localhost", "xschoenberger", "Supercalifragilistic17!", "xschoenberger_db");
+$dblink = mysqli_connect("localhost", "xschoenberger_db", "Supercalifragilistic17!", "xschoenberger_db");
 
 /* $dblink = mysqli_connect("localhost", "root", "root", "portfolio", "8889"); */
 
