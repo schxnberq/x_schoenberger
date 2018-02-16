@@ -14,6 +14,6 @@ if (isset($_POST['update_catalog'])) {
     if ($_POST['album'] !== "") {
         mysqli_query($dblink, "UPDATE work SET album = '{$_POST['album']}' WHERE id = '{$_POST['item_id']}'");
     }
-    header("Location:" . APP_ROOT . "backend/catalog");
+    header("Location:" . APP_ROOT . "backend/?page=catalog");
     exit();
 }
