@@ -1625,7 +1625,7 @@ footer {
     .main .content__head {
       margin-left: -2.5%;
       width: calc(100vw - 20px); }
-    .main .content__photo__keyword img {
+    .main .content__photo__keyword .img {
       padding: 10px; }
     .main .content__photo__keyword .title em {
       transform: translate(-5%, 7%) rotate(90deg); }
