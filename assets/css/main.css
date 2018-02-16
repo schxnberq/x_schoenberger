@@ -1627,7 +1627,7 @@ footer {
       width: calc(100vw - 20px); }
     .main .content__photo__keyword img {
       padding: 10px; }
-    .main .content__photo__keyword .title {
+    .main .content__photo__keyword .title em {
       transform: translate(-5%, 7%) rotate(90deg); }
   .main .content__head__title .cnt-breadcr a {
     width: 60%; }
