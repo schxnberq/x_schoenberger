@@ -1,6 +1,8 @@
 <?php
 $dblink = mysqli_connect("localhost", "xschoenberger", "Supercalifragilistic17!", "xschoenberger_db");
 
+/* $dblink = mysqli_connect("localhost", "root", "root", "portfolio", "8889"); */
+
 /*$dblink = mysqli_connect("e49145-ftp.services.easyname.eu", "u58111db4", "supercalifragilistic", "u58111db4");*/
 
 /*$url = getenv('mysql://th6e1pgmqak5lbbo:mr3cz7pw0aczz21w@gzp0u91edhmxszwf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/s05aoadkktjhmriz');
