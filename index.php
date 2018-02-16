@@ -21,7 +21,7 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : "home";
 var_dump($page);
 
 $page = rtrim($page, "/");
-var_dump($page);
+var_dump($rtrim($page, "/"));
 
 $page = explode("/", $page);
 var_dump($page);
