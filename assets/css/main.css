@@ -1067,20 +1067,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 6.5%; }
     .main .content__photo__keyword .title {
       text-transform: uppercase;
-      letter-spacing: 16px;
+      letter-spacing: 14px;
       margin-left: -2rem;
       position: relative;
       grid-column: span 2;
       font-weight: 300;
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-family: 'Abel'; }
       .main .content__photo__keyword .title em {
         font-family: 'Solo_Barcode';
         font-style: normal;
         font-size: 2rem;
-        letter-spacing: 2.5px;
+        letter-spacing: 2px;
         display: inline-block;
-        transform: translate(-5%, 11%); }
+        transform: translate(-5%, 7%); }
       .main .content__photo__keyword .title span {
         position: relative;
         background-color: rgba(38, 38, 43, 0.5); }
