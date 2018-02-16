@@ -1662,7 +1662,7 @@ left: 0%;
       width: calc(100vw - 20px); }
     .main .content__photo__keyword {
       padding: 0 2.5%; }
-      .main .content__photo__keyword.img {
+      .main .content__photo__keyword .img {
         padding: 10px; }
       .main .content__photo__keyword .title {
         margin-left: -1.75rem; }
