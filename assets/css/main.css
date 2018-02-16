@@ -1612,6 +1612,8 @@ footer {
   .main .hero__cnt__title .skills {
     line-height: 1.4em;
     font-size: 1.3em; }
+  .main .content__head__title .cnt-breadcr a {
+    width: 60%; }
   .main .content__head__title h2.photo {
     font-size: 9vw;
     letter-spacing: 0; }
