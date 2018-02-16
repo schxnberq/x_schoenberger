@@ -312,10 +312,10 @@ h6 {
     .header .nav__icon__cnt:hover span {
       transform: rotateY(180deg); }
   .header .nav__menu {
-    width: calc(100vw - 40px);
-    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+    height: calc(100vh - 10px);
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     background-color: RGBA(53, 51, 58, 0.99);
