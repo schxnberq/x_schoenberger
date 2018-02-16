@@ -1673,18 +1673,18 @@ left: 0%;
     .main .content__photo__cnt a {
       width: 90%;
       left: 5%; }
+    .main .content .overlay {
+      width: calc(100vw - 20px);
+      height: calc(100vh - 10px);
+      top: 10px;
+      left: 10px; }
   .main .content__head__title .cnt-breadcr a {
     width: 60%; }
   .main .content__head__title h2.photo {
     font-size: 9vw;
     letter-spacing: 0; }
   .main .content__head__title__next {
-    bottom: -55%; }
-  .main .overlay {
-    width: calc(100vw - 20px);
-    height: calc(100vh - 10px);
-    top: 10px;
-    left: 10px; } }
+    bottom: -55%; } }
 @media screen and (max-width: 400px) {
   .main .hero__cnt__title {
     margin-top: 18vh; }
