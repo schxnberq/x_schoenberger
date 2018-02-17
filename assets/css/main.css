@@ -312,11 +312,11 @@ h6 {
     .header .nav__icon__cnt:hover span {
       transform: rotateY(180deg); }
   .header .nav__menu {
-    width: calc(100vw - 20px);
-    height: calc(100vh - 10px);
-    position: fixed;
-    top: 10px;
+    width: calc(100vw - 40px);
+    height: calc(100vh - 20px);
+    top: 20px;
     left: 50%;
+    position: fixed;
     transform: translateX(-50%);
     background-color: RGBA(53, 51, 58, 0.99);
     opacity: 0;
@@ -330,6 +330,11 @@ h6 {
     box-shadow: 3px 10px 45px rgba(0, 0, 0, 0.25);
     text-align: right;
     perspective: 1000px; }
+    @media screen and (max-width: 575px) {
+      .header .nav__menu .nav__menu {
+        width: calc(100vw - 20px);
+        height: calc(100vh - 10px);
+        top: 10px; } }
   .header .nav__menu__exit {
     width: 60px;
     height: 60px;
