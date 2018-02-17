@@ -71,14 +71,14 @@
                 </li>
             </ul>
             <ul class="nav__menu__social fadeNav">
-                <li class="nav__menu__social__item"><a target="_blank" href="https://www.500px.com/x_schoenberger"><span
+                <li class="nav__menu__social__item"><a target="_blank" href="https://www.500px.com/xschoenberger"><span
                                 class="icon-500px"></span></a></li>
-                <li class="nav__menu__social__item"><a target="_blank"
-                                                       href="https://www.behance.net/x_schoenberger"><span
+                <li class="nav__menu__social__item">
+                <a target="_blank" href="https://www.behance.net/xschoenberger"><span
                                 class="icon-behance"></span></a></li>
-                <li class="nav__menu__social__item"><a target="_blank"
-                                                       href="https://www.instagram.com/x_schoenberger"><span
-                                class="icon-instagram"></span></a></li>
+                <li class="nav__menu__social__item">
+                <a target="_blank" href="https://www.instagram.com/xschoenberger">
+                <span class="icon-instagram"></span></a></li>
                 <li class="nav__menu__social__item"><a target="_blank" href="https://www.soundcloud.com/by_eurus"><span
                                 class="icon-soundcloud"></span></a></li>
 
