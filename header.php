@@ -17,8 +17,7 @@
 <header class="header">
     <nav class="nav">
         <div class="nav__logo fadeNav">
-            <h1><span class="visually-hidden">Niklas Schoenberger - Digital Artist</span><a tabindex="1" data-goto
-                                                                                            href="<?php echo APP_ROOT ?>home">
+            <h1><span class="visually-hidden">Niklas Schoenberger - Digital Artist</span><a tabindex="1" data-goto href="<?php echo APP_ROOT ?>home">
                     <img src="<?php echo APP_ROOT ?>assets/imgs/logo-w.png" alt=""></a>
             </h1>
         </div>
