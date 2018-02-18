@@ -10,7 +10,7 @@
         </div>
         <div class="content__head__title scroll-item">
             <div class="cnt-breadcr">
-                <?php echo (isset($page_ter)) ? "<a href='" . APP_ROOT . "work/photography'>to <em>photography</em></a>" : "<a href='" . APP_ROOT . "home'>to <em>home</em></a>" ?>
+                <?php echo (isset($page_ter)) ? "<a href='" . APP_ROOT . "work/photography'><em>to</em> photography</a>" : "<a href='" . APP_ROOT . "home'><em>to</em> home</a>" ?>
             </div>
             <h2 class="fadeItem <?php echo (isset($_GET['categ']) && $_GET['categ'] === 'web') ? 'web' : 'photo' ?>">
                 <?php if (isset($page_ter)) :
