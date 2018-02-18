@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
     if (document.querySelector("select")) {
         function selectFocus(ev) {
             if (ev.target.selectedIndex == 0) {
