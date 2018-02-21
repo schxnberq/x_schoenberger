@@ -2,7 +2,8 @@
 
 session_start();
 
-define("APP_ROOT", "http://www.xschoenberger.com/");
+define("APP_ROOT", "http://xschoenberger.com/");
+header('Cache-Control: max-age=86400');
 
 include 'includes/dbconnect.php';
 include 'includes/functions.php';
