@@ -22,7 +22,7 @@
 
     foreach ($keys as $keyword => $none) :
 
-        $key_sql = "SELECT * FROM work WHERE album = '{$keyword}'";
+        $key_sql = "SELECT * FROM work WHERE album = '{$keyword}' AND status = 'live'";
         $key_res = mysqli_query($dblink, $key_sql);
         $key_row = mysqli_fetch_all($key_res, MYSQLI_ASSOC);
 
