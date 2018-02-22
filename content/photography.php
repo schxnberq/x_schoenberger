@@ -104,6 +104,7 @@
 
 
                         $file = getimagesize($row['path']);
+                        var_dump($file);
                         $format = "";
 
                         if ($file[0] > $file[1]) {
@@ -112,9 +113,6 @@
                         if ($file[1] > $file[0]) {
                             $format = "portrait";
                         }
-
-
-
 
                         if ($row['keywords'] == $categ) {
                             $xx++;
