@@ -9,7 +9,7 @@
     <meta name="description"
           content="Niklas Schoenberger - Digital Artist, Photography, Webdesign & Webdevelopment, Photomanipulation, Music">
     <link rel="stylesheet" href="<?php echo APP_ROOT ?>assets/css/main.css">
-    <link rel="icon" href="<?php echo APP_ROOT ?>assets/imgs/logo-smoke.png">
+    <link rel="icon" href="<?php echo APP_ROOT ?>assets/imgs/new_logo.svg">
     
 </head>
 <body id="body">
@@ -18,7 +18,7 @@
     <nav class="nav">
         <div class="nav__logo fadeNav">
             <h1><span class="visually-hidden">Niklas Schoenberger - Digital Artist</span><a tabindex="1" data-goto href="<?php echo APP_ROOT ?>home">
-                    <img src="<?php echo APP_ROOT ?>assets/imgs/logo-w.png" alt=""></a>
+                    <img src="<?php echo APP_ROOT ?>assets/imgs/new_logo.svg" alt=""></a>
             </h1>
         </div>
         <div class="nav__icon fadeNav">
