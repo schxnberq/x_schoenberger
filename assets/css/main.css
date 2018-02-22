@@ -1594,6 +1594,8 @@ left: 0%;
       padding: 0 5%; }
     .header .nav__logo {
       flex-basis: 10%; }
+      .header .nav__logo h1 a img {
+        transform: none; }
     .header .nav__icon {
       flex-basis: 90%; }
     .header .nav__menu__exit {
