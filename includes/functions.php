@@ -29,7 +29,7 @@ if (isset($_POST['do-login'])) {
             $_SESSION['user_id'] = $user['id'];
 
 
-            header('Location:' . APP_ROOT . 'backend/dashboard');
+            header('Location:' . APP_ROOT . 'backend?page=dashboard');
             exit();
 
         } else {
@@ -66,9 +66,9 @@ if (isset($_POST['do-upload'])) {
 
         $path = "";
         if ($_POST['category'] == "photography") {
-            $path = "../assets/imgs/work/photo/" . $_FILES['images']['name'][$key];
+            $path = "assets/imgs/work/photo/" . $_FILES['images']['name'][$key];
         } else {
-            $path = "../assets/imgs/work/web/" . $_FILES['images']['name'][$key];
+            $path = "assets/imgs/work/web/" . $_FILES['images']['name'][$key];
         }
 
         move_uploaded_file($_FILES['images']['tmp_name'][$key], $path);

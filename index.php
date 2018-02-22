@@ -2,7 +2,7 @@
 
 session_start();
 
-define("APP_ROOT", "http://xschoenberger.com/");
+define("APP_ROOT", "http://localhost:8888/x_schoenberger/");
 //header('Cache-Control: max-age=86400');
 
 include 'includes/dbconnect.php';
@@ -29,22 +29,30 @@ $page_pri = null;
 if(count($page) <= 1) {
     $page_pri = "home";
 } else {
-    $page_pri = $page[1];
+    $page_pri = $page[0];
 }
-$page_sec = $page[2];
-$page_ter = $page[3];
+/*if(isset($page[0])) {
+    $page_pri = $page[0];
+}*/
+if(isset($page[1])) {
+    $page_sec = $page[1];
+}
+
+if(isset($page[2])) {
+    $page_ter = $page[2];
+}
 
 if ($page_pri == "work" && !isset($page_sec)) {
     header("Location:" . APP_ROOT . 'work/photography');
     exit();
 }
 if ($_SESSION['login'] == 1 && $page_pri == "login") {
-    header("Location:" . APP_ROOT . "backend/dashboard");
+    header("Location:" . APP_ROOT . "backend/?page=dashboard");
     exit();
 }
 if ($page_pri == "backend") {
     if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
-        header("Location:" . APP_ROOT . "backend/dashboard");
+        header("Location:" . APP_ROOT . "backend/?page=dashboard");
         exit();
     }
 }
