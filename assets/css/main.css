@@ -175,11 +175,13 @@ h6 {
     flex-basis: 50%;
     z-index: 97; }
     .header .nav__logo h1 {
-      font-size: 1em; }
+      font-size: 1em;
+      text-align: right; }
       .header .nav__logo h1 span.visually-hidden {
         font-size: 0; }
       .header .nav__logo h1 a {
-        display: inline-block; }
+        display: inline-block;
+        transform: translateX(48.5%); }
         .header .nav__logo h1 a:focus {
           outline: 1px solid rgba(0, 255, 243, 0.65); }
       .header .nav__logo h1 img {
