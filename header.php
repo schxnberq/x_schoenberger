@@ -9,7 +9,7 @@
     <meta name="description"
           content="Niklas Schoenberger - Digital Artist, Photography, Webdesign & Webdevelopment, Photomanipulation, Music">
     <link rel="stylesheet" href="<?php echo APP_ROOT ?>assets/css/main.css">
-    <link rel="icon" href="<?php echo APP_ROOT ?>assets/imgs/business-logo.png">
+    <link rel="icon" href="<?php echo APP_ROOT ?>assets/business-logo.png">
     
 </head>
 <body id="body">
