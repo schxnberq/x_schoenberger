@@ -97,7 +97,6 @@
         document.body.style.opacity = "1";
     }, 100)
 </script>
-<body>
 <main class="main <?php echo (!isset($page_pri) || $page_pri == "home") ? 'home' : '' ?>">
 
 
