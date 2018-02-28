@@ -4,7 +4,7 @@
 
         <div class="hero__cnt__title">
             <h2>Hi, <span class="iam">I'm <a href="<?php echo APP_ROOT ?>cv"><em
-                                class="iam-name">Niklas Schoenberger.</em></span></a>
+                                class="iam-name">Niklas Schoenberger.</em></a></span>
             </h2>
             <p class="skills"><em class="skillsA">A</em> <a data-goto href="<?php echo APP_ROOT ?>work/web" class="">Webdeveloper,</a>
                 <!--<br class="hideBR">-->
