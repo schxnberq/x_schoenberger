@@ -104,7 +104,7 @@
 
 
                         $file = getimagesize($row['path']);
-                        
+
                         $format = "";
 
                         if ($file[0] > $file[1]) {
@@ -117,7 +117,7 @@
                         if ($row['keywords'] == $categ) {
                             $xx++;
                             $unxx = 0;
-                            
+
 
                             $check_lines = explode(".jpg", $row['path']);
                             $path = APP_ROOT . $check_lines[0] . '_lines.png';
@@ -143,7 +143,7 @@
         } endforeach; ?>
 
 </div>
-</div>
+
 
 
 
