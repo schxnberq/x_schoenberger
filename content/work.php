@@ -1,4 +1,5 @@
-<section class="content <?php echo (!isset($_GET['categ'])) ? ' no_content' : ($_GET['categ'] === "photo") ? 'content-photo' : '' ?>">
+<section
+        class="content <?php echo (!isset($_GET['categ'])) ? ' no_content' : ($_GET['categ'] === "photo") ? 'content-photo' : '' ?>">
     <div class="content__head">
         <div class="content__head__img fadeIMG">
             <?php if (isset($page_sec) && $page_sec == "web") { ?>
@@ -10,7 +11,14 @@
         </div>
         <div class="content__head__title scroll-item">
             <div class="cnt-breadcr">
-                <?php echo (isset($page_sec) && $page_sec == "web") ? "<a href='" . APP_ROOT . "work/photography'><em>to</em> photography</a>" : "<a href='" . APP_ROOT . "work/web'><em>to</em> web</a>" ?>
+                <?php if (isset($page_sec) && $page_sec == "web" && !isset($page_ter)) {
+                    echo "<a href='" . APP_ROOT . "work/photography'><em>to</em> photography</a>";
+                } elseif(isset($page_sec) && $page_sec == "photography" && !isset($page_ter)) {
+                    echo "<a href='" . APP_ROOT . "work/web'><em>to</em> web</a>";
+                } elseif(isset($page_ter) && $page_sec == "photography") {
+                    echo "<a href='" . APP_ROOT . "work/photography'><em>to</em> photography</a>";
+                }
+                ?>
             </div>
             <h2 class="fadeItem <?php echo (isset($_GET['categ']) && $_GET['categ'] === 'web') ? 'web' : 'photo' ?>">
                 <?php if (isset($page_ter)) :
