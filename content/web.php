@@ -3,46 +3,51 @@
 
     <?php
 
-    $sql = "SELECT * FROM work WHERE category = 'web' AND status = 'live' AND deleted = '0'";
-    $res = mysqli_query($dblink, $sql);
-    $row = mysqli_fetch_all($res, MYSQLI_ASSOC);
-    /*
-    foreach ($row as $key => $item):
+$sql = "SELECT * FROM work WHERE category = 'web' AND status = 'live' AND deleted = '0'";
+$res = mysqli_query($dblink, $sql);
+$row = mysqli_fetch_all($res, MYSQLI_ASSOC);
 
-    $get_txt = explode(":", $item['keywords']);
-    $title = $get_txt[0];
-    $descr = $get_txt[1];
+foreach ($row as $key => $item):
+
+    $info = explode(":", $item['keywords']);
+
+    $type = $info[0];
+
+    $skills = array();
+
+    for ($i = 1; $i < count($info); $i++) {
+        array_push($skills, $info[$i]);
+    }
+
     ?>
 
-    <div class="conten__web__item">
+			    <div class="content__web__cnt">
 
-    <h2>
-    <?php echo $title . " <em>{$descr}</em>" ?>
-    </h2>
+			    <h2 class="key-title">
+			    <?php echo $item['album']; ?>
+			    </h2>
+			    <div class="hover-info">
+		            <span class="type"><?php echo $type; ?></span>
+                                <?php foreach ($skills as $key => $skill):
+        if ($key >= count($skills) - 1) { 
+                echo "<a target=\"_blank\" href=\"http://{$skill}\"></a>";
+        } else {
+            ?>
+				                <span class="<?php echo strtolower($skill); ?>"><?php echo $skill ?></span>
+				                <?php }
+    endforeach;?>
+		            
+                            </div>
 
-    <img src="<?php echo APP_ROOT . $item['path'] ?>" alt="">
+			    <img src="<?php echo APP_ROOT . $item['path'] ?>" alt="">
 
-    </div>
+			    </div>
 
-    <?php endforeach;?>*/
-    ?>
+			    <?php endforeach;?>
 
-    <!--<div class="footsteps">
-        <span class="process">0%</span>
-        <span class="line"></span>
-        <svg width="35" height="35" id="left-tree" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <image width="35" height="35" xlink:href="<?php /*echo APP_ROOT . "assets/imgs/tree_arrow_w.svg" */?>" x="0"
-                   y="0"/>
-        </svg>
-        <svg width="35" height="35" id="right-tree" xmlns="http://www.w3.org/2000/svg"
-             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <image width="35" height="35" xlink:href="<?php /*echo APP_ROOT . "assets/imgs/tree_arrow_w.svg" */?>" x="0"
-                   y="0"/>
-        </svg>
-    </div>
 
-    <div class="loading-steps">
+
+    <!--div class="loading-steps">
         <span class="start"></span>
         <svg id="first-svg" =xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454.91 63.77">
             <title>steps</title>
@@ -106,14 +111,5 @@
         <span class="finish"></span>
     </div>-->
 
-
-    <!--form id="form" method="post">
-        <label for="text1">Text1</label>
-        <input type="text" id="text1">
-        <label for="text2">Text2</label>
-        <input type="text" id="text2">
-
-        <button type="submit">Do</button>
-    </form-->
 
 </div>
