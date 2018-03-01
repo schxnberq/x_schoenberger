@@ -3,48 +3,46 @@
 
     <?php
 
-$sql = "SELECT * FROM work WHERE category = 'web' AND status = 'live' AND deleted = '0'";
-$res = mysqli_query($dblink, $sql);
-$row = mysqli_fetch_all($res, MYSQLI_ASSOC);
+    $sql = "SELECT * FROM work WHERE category = 'web' AND status = 'live' AND deleted = '0'";
+    $res = mysqli_query($dblink, $sql);
+    $row = mysqli_fetch_all($res, MYSQLI_ASSOC);
 
-foreach ($row as $key => $item):
+    foreach ($row as $key => $item):
 
-    $info = explode(":", $item['keywords']);
+        $info = explode(":", $item['keywords']);
 
-    $type = $info[0];
+        $type = $info[0];
 
-    $skills = array();
+        $skills = array();
 
-    for ($i = 1; $i < count($info); $i++) {
-        array_push($skills, $info[$i]);
-    }
+        for ($i = 1; $i < count($info); $i++) {
+            array_push($skills, $info[$i]);
+        }
 
-    ?>
+        ?>
 
-			    <div class="content__web__cnt">
+        <div class="content__web__cnt">
 
-			    <h2 class="key-title">
-			    <?php echo $item['album']; ?>
-			    </h2>
-			    <div class="hover-info">
-		            <span class="type"><?php echo $type; ?></span>
-                                <?php foreach ($skills as $key => $skill):
-        if ($key >= count($skills) - 1) { 
-                echo "<a target=\"_blank\" href=\"http://{$skill}\"></a>";
-        } else {
-            ?>
-				                <span class="<?php echo strtolower($skill); ?>"><?php echo $skill ?></span>
-				                <?php }
-    endforeach;?>
-		            
-                            </div>
+            <h2 class="key-title">
+                <?php echo $item['album']; ?>
+            </h2>
+            <div class="hover-info">
+                <span class="type skill"><?php echo $type; ?></span>
+                <?php foreach ($skills as $key => $skill):
+                    if ($key >= count($skills) - 1) {
+                        echo "<a target=\"_blank\" href=\"http://{$skill}\"></a>";
+                    } else {
+                        ?>
+                        <span class="skill <?php echo strtolower($skill); ?>"><?php echo $skill ?></span>
+                    <?php } endforeach; ?>
 
-			    <img src="<?php echo APP_ROOT . $item['path'] ?>" alt="">
+            </div>
 
-			    </div>
+            <img src="<?php echo APP_ROOT . $item['path'] ?>" alt="">
 
-			    <?php endforeach;?>
+        </div>
 
+    <?php endforeach; ?>
 
 
     <!--div class="loading-steps">
